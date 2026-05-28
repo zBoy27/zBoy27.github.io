@@ -54,7 +54,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Main Content */
+/* Main Content Layout */
 main {
     max-width: 850px;
     margin: 4rem auto;
@@ -82,29 +82,65 @@ h1::after {
     border-radius: 10px;
 }
 
-/* Reflection Page Card Style */
-.reflection-content {
+/* --- Container Card Styles --- */
+/* Applied to both the reflection article and general page sections */
+.reflection-content, section {
     background: #ffffff;
     padding: 3rem;
     border-radius: 20px; /* Playful, friendly rounded corners */
     box-shadow: 0 10px 30px rgba(44, 26, 77, 0.06); /* Soft, colored shadow */
     border: 1px solid rgba(44, 26, 77, 0.03);
+    margin-bottom: 2.5rem; /* Separates stacked elements cleanly */
 }
 
-.reflection-content p {
+/* Typography Inside Content Cards */
+.reflection-content p, section p {
     margin-bottom: 1.8rem;
     font-size: 1.15rem;
     color: #4a5568;
 }
 
-.reflection-content p:last-child {
+.reflection-content p:last-child, section p:last-of-type {
     margin-bottom: 0;
 }
 
-/* Decorative touch: subtle colored left-border on the middle paragraph */
+/* Subtitles (used on the About page) */
+h2 {
+    color: #2c1a4d;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+/* Decorative touch for the Reflection page text */
 .reflection-content p:nth-child(2) {
     border-left: 4px solid #ff5e62;
     padding-left: 1.2rem;
+}
+
+/* --- Custom Gaming-Style Bullet Lists --- */
+section ul {
+    list-style-type: none; /* Removes generic black dots */
+    padding-left: 0.5rem;
+}
+
+section li {
+    font-size: 1.15rem;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.5rem;
+    font-weight: 500;
+}
+
+/* Adds a vibrant coral square bullet for a polished UI feel */
+section li::before {
+    content: "■"; 
+    color: #ff5e62; 
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: -1px;
 }
 
 /* Footer */
@@ -140,8 +176,9 @@ footer {
         margin-bottom: 1.8rem;
     }
 
-    .reflection-content {
+    .reflection-content, section {
         padding: 2rem 1.5rem;
+        margin-bottom: 1.8rem;
     }
     
     .reflection-content p:nth-child(2) {
