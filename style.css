@@ -7,18 +7,15 @@
 }
 
 body {
-    /* Modern, friendly geometric font stack */
     font-family: 'Quicksand', 'Segoe UI', Roboto, sans-serif;
     line-height: 1.7;
     color: #2d3748;
-    /* Soft, colorful gradient background that feels alive but subtle */
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     min-height: 100vh;
 }
 
 /* Navigation */
 nav {
-    /* Deep royal purple provides a strong, professional anchor */
     background-color: #2c1a4d; 
     padding: 1.2rem 0;
     position: sticky;
@@ -41,19 +38,17 @@ nav a {
     font-size: 1.05rem;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 8px;
 }
 
-/* Energetic mint green hover effect */
 nav a:hover {
     color: #2c1a4d;
     background-color: #00f2fe;
     transform: translateY(-2px);
 }
 
-/* Main Content Layout */
+/* Main Layout */
 main {
     max-width: 850px;
     margin: 4rem auto;
@@ -69,7 +64,6 @@ h1 {
     display: inline-block;
 }
 
-/* Vibrant dual-color accent bar under headings */
 h1::after {
     content: '';
     position: absolute;
@@ -77,32 +71,26 @@ h1::after {
     left: 0;
     width: 80px;
     height: 6px;
-    background: linear-gradient(90deg, #ff5e62, #ff9966); /* Warm, fun coral gradient */
+    background: linear-gradient(90deg, #ff5e62, #ff9966);
     border-radius: 10px;
 }
 
-/* --- Container Card Styles --- */
-.reflection-content, section {
+/* Project Cards */
+section, .project {
     background: #ffffff;
     padding: 3rem;
-    border-radius: 20px; /* Playful, friendly rounded corners */
-    box-shadow: 0 10px 30px rgba(44, 26, 77, 0.06); /* Soft, colored shadow */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(44, 26, 77, 0.06);
     border: 1px solid rgba(44, 26, 77, 0.03);
-    margin-bottom: 2.5rem; /* Separates stacked elements cleanly */
+    margin-bottom: 2.5rem;
 }
 
-/* Typography Inside Content Cards */
-.reflection-content p, section p {
+section p, .project p {
     margin-bottom: 1.8rem;
     font-size: 1.15rem;
     color: #4a5568;
 }
 
-.reflection-content p:last-child, section p:last-of-type {
-    margin-bottom: 0;
-}
-
-/* Subtitles (used on About & Projects pages) */
 h2 {
     color: #2c1a4d;
     font-size: 1.6rem;
@@ -111,7 +99,7 @@ h2 {
 }
 
 h3 {
-    color: #ff5e62; /* Coral accent color for section headings */
+    color: #ff5e62;
     font-size: 1.15rem;
     margin-top: 1.5rem;
     margin-bottom: 0.4rem;
@@ -120,48 +108,11 @@ h3 {
     letter-spacing: 0.5px;
 }
 
-/* Decorative touch for the Reflection page text */
-.reflection-content p:nth-child(2) {
-    border-left: 4px solid #ff5e62;
-    padding-left: 1.2rem;
-}
-
-/* Bold accent labels inside list items */
-section li strong {
-    color: #2c1a4d;
-    font-weight: 700;
-}
-
-/* --- Custom Gaming-Style Bullet Lists --- */
-section ul {
-    list-style-type: none; /* Removes generic black dots */
-    padding-left: 0.5rem;
-}
-
-section li {
-    font-size: 1.15rem;
-    color: #4a5568;
-    margin-bottom: 0.6rem;
-    position: relative;
-    padding-left: 1.5rem;
-    font-weight: 500;
-}
-
-/* Adds a vibrant coral square bullet for a polished UI feel */
-section li::before {
-    content: "■"; 
-    color: #ff5e62; 
-    font-size: 0.8rem;
-    position: absolute;
-    left: 0;
-    top: -1px;
-}
-
-/* --- Embedded Game Styles --- */
+/* Game Embed Styling */
 .game-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Arcade Aspect Ratio */
+    padding-top: 56.25%; /* Responsive 16:9 */
     margin: 1.5rem 0 0.5rem 0;
     border-radius: 12px;
     overflow: hidden;
@@ -180,9 +131,9 @@ section li::before {
 }
 
 .game-tip {
-    font-size: 0.95rem !important;
+    font-size: 0.95rem;
     font-weight: 700;
-    color: #ff5e62 !important;
+    color: #ff5e62;
     text-align: center;
     margin-bottom: 1.5rem;
     letter-spacing: 0.5px;
@@ -199,16 +150,11 @@ footer {
     font-weight: 500;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-    nav {
-        padding: 1rem 0;
-    }
-
     nav ul {
         flex-direction: column;
         gap: 0.6rem;
-        text-align: center;
     }
 
     main {
@@ -218,15 +164,9 @@ footer {
 
     h1 {
         font-size: 2.2rem;
-        margin-bottom: 1.8rem;
     }
 
-    .reflection-content, section {
+    section, .project {
         padding: 2rem 1.5rem;
-        margin-bottom: 1.8rem;
-    }
-    
-    .reflection-content p:nth-child(2) {
-        padding-left: 0.8rem;
     }
 }
