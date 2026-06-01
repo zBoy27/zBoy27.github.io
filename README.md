@@ -5,7 +5,7 @@ This site showcases my journey as a student developer—highlighting my projects
 
 ---
 
-## 🚀 About the Portfolio
+## About the Portfolio
 
 This portfolio is designed to be a clean, simple, and accessible space where visitors can explore:
 
@@ -17,7 +17,7 @@ This portfolio is designed to be a clean, simple, and accessible space where vis
 
 ---
 
-## 👨‍💻 Who I Am
+## Who I Am
 
 I’m **Zachary**, a student developer passionate about:
 
@@ -30,7 +30,7 @@ My portfolio reflects my progress as I experiment, learn, and push myself to bec
 
 ---
 
-## 🧩 Projects
+## Projects
 
 Each project in this portfolio represents:
 
@@ -42,7 +42,7 @@ You can explore all of them on the **Projects** page, where I break down what ea
 
 ---
 
-## 🎯 Goals
+## Goals
 
 I’m working toward:
 
@@ -53,6 +53,6 @@ I’m working toward:
 
 ---
 
-## ©️ License
+## License
 
 © 2026 Zachary. All rights reserved.
